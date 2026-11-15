@@ -80,7 +80,7 @@ model RFQ {
   serviceDate      DateTime
   status           RFQStatus @default(DRAFT)
   createdAt        DateTime  @default(now())
-  autiion          Auction?
+  auction          Auction?
 
   buyer User @relation("BuyerRFQs", fields: [buyerId], references: [id])
 
