@@ -105,7 +105,7 @@ model Auction {
   createdAt DateTime      @default(now())
 
   bids          Bid[]
-  acitivityLogs ActivityLog[]
+  activityLogs ActivityLog[]
 
   rfq RFQ @relation(fields: [rfqId], references: [id])
 
